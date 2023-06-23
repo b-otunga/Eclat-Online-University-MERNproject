@@ -58,6 +58,7 @@ const EditStudent = () => {
 } 
 };
   return (
+    <>
     <div className="joinUsForm">
       <strong>
         <p className="editingText">
@@ -188,7 +189,7 @@ const EditStudent = () => {
           Save
         </Button>
       </Form>
-    </div>
+    </div> </>
   );
 };
 

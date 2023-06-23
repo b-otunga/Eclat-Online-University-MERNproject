@@ -5,6 +5,7 @@ function JoinUs() {
 
 
   return (
+    <>
     <div className="joinUsForm">
       <h5>Welcome! Join Us Below!</h5>
       <Form method="post">
@@ -103,6 +104,7 @@ function JoinUs() {
         </Button>
       </Form>
     </div>
+    </>
   );
 }
 
