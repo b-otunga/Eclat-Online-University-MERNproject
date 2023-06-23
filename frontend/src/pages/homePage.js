@@ -3,24 +3,49 @@ import { Link } from "react-router-dom";
 const HomePage = () => {
 
     return ( 
-    <div className="homepage">
-        <div className="homewelcome">
-    <h1>Welcome to Éclat University. </h1>
-    <h5>Where Failure is Illegal</h5>
+        <>
+    <div id="homepage">
+        <div id="homewelcome">
+        <div id="home-header">
+            <img src="TeamLogo.JPG" alt="" className="topLogoImg1" />
+
+            <ul className="home-lists">
+<li><Link to = "/" className="home-links">Home</Link></li>
+<li><Link to = "/join" className="home-links">Join Us</Link></li>
+<li><Link to = "/students" className="home-links">Our Students</Link></li>
+            </ul>
+    
     </div>
-    <br /> <br /> <br />
+    <div id="home-center">
+        <div id="home-quote">
+    <p>In a world that gives countless reasons to be bad, the bravest are those that still DARE TO DO GOOD.</p>
 
-    <div id = "homeClickHere"> <Link to={"/join"} id = "hometext" > <h5>Click here to join us</h5> </Link> </div>
-    
-    <br /> <br /> <br />
+<p id="quote-ref">By: Good person</p>
+</div>
 
-<div className="homenoteformorebeauty">
 
-<p >We are still adding some beauty to our homepage: Hold Up: </p>
+<div className="rightquote">
+    <div id="welcome-right">
+    <h4>Welcome To Eclat Online University</h4>
+    <h6>"Smile, laugh, learn, repeat</h6>
+    <Link to="/join" id="homeClickHere"> <strong>Click Here To Join Us</strong></Link>
+    </div>
+    <div id="tips">
+        <h5>Tips:</h5>
+    <p>"If at first you don't succeed, blame the instructions."</p>
+    <p>"When in doubt, just Google it and pretend you knew it all along."</p></div>
 
-<h5>At Éclat, Boredom will be punished </h5> </div>
-    
-    </div> );
+</div>
+
+
+
+
+    </div></div>
+    <div id="home-footer">
+    © Copyright: Bill Otunga - {new Date().getFullYear()}
+    </div>
+    </div>
+    </> );
 }
  
 export default HomePage;
